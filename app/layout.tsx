@@ -1,26 +1,27 @@
-import type React from "react"
-import type { Metadata, Viewport } from "next/types"
-import { Inter } from "next/font/google"
-import Script from "next/script"
+import type React from "react";
+import type { Metadata, Viewport } from "next/types";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Emergency A/C | HVAC Doctors around Buda, Texas",
   description:
     "Professional HVAC services in South Austin, Buda, Kyle and surrounding areas. Emergency A/C repair, maintenance, and replacement services.",
-  keywords: "HVAC, air conditioning, heating, AC repair, emergency AC, Buda, South Austin, Kyle",
-}
+  keywords:
+    "HVAC, air conditioning, heating, AC repair, emergency AC, Buda, South Austin, Kyle",
+};
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -45,6 +46,5 @@ export default function RootLayout({
         />
       </body>
     </html>
-  )
+  );
 }
-
